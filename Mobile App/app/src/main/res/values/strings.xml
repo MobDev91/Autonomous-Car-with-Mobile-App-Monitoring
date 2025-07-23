@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">IoT Car Monitoring</string>
+
+    <!-- Main Activity -->
+    <string name="refresh_data">Refresh Data</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="last_update">Last Update: %s</string>
+
+    <!-- Battery Section -->
+    <string name="battery_status">Battery Status</string>
+    <string name="battery_percentage">%d%%</string>
+    <string name="battery_health">Health: %s</string>
+    <string name="battery_voltage">Voltage: %.1fV</string>
+    <string name="battery_excellent">Excellent</string>
+    <string name="battery_good">Good</string>
+    <string name="battery_fair">Fair</string>
+    <string name="battery_poor">Poor</string>
+    <string name="battery_unknown">Unknown</string>
+
+    <!-- Motor Section -->
+    <string name="motor_status">Motor Status</string>
+    <string name="motor_running">Running</string>
+    <string name="motor_stopped">Stopped</string>
+    <string name="motor_error">Error</string>
+    <string name="motor_maintenance">Maintenance</string>
+    <string name="motor_speed">Speed: %d%%</string>
+    <string name="motor_direction">Direction: %s</string>
+
+    <!-- Temperature Section -->
+    <string name="system_temperature">System Temperature</string>
+    <string name="temperature_celsius">%.1f°C</string>
+    <string name="temperature_normal">Normal</string>
+    <string name="temperature_warm">Warm</string>
+    <string name="temperature_hot">High</string>
+    <string name="temperature_critical">Critical</string>
+    <string name="ambient_temperature">Ambient: %.1f°C</string>
+
+    <!-- Trip History Section -->
+    <string name="trip_history">Recent Trips</string>
+    <string name="trip_distance">%.2f km</string>
+    <string name="trip_distance_meters">%.0f m</string>
+    <string name="trip_duration_hours">%dh %dm</string>
+    <string name="trip_duration_minutes">%dm %ds</string>
+    <string name="trip_duration_seconds">%ds</string>
+    <string name="trip_speed">%.1f km/h</string>
+    <string name="trip_battery_used">%d%% used</string>
+    <string name="trip_efficiency_excellent">🟢 Excellent</string>
+    <string name="trip_efficiency_good">🟡 Good</string>
+    <string name="trip_efficiency_fair">🟠 Fair</string>
+    <string name="trip_efficiency_poor">🔴 Poor</string>
+    <string name="no_trips_available">No trips recorded yet</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">IoT Car Monitoring</string>
+    <string name="notification_channel_description">Notifications for car status alerts</string>
+    <string name="alert_low_battery">Low Battery</string>
+    <string name="alert_high_temperature">High Temperature</string>
+    <string name="alert_motor_error">Motor Error</string>
+    <string name="alert_battery_health">Battery Health</string>
+    <string name="alert_system_error">System Error</string>
+
+    <!-- Alert Messages -->
+    <string name="alert_battery_low_message">Battery level is %d%%</string>
+    <string name="alert_battery_critical_message">Battery level critically low: %d%%</string>
+    <string name="alert_temperature_high_message">System temperature is %.1f°C</string>
+    <string name="alert_temperature_critical_message">System temperature critically high: %.1f°C</string>
+    <string name="alert_motor_error_message">Motor system has encountered an error</string>
+    <string name="alert_battery_health_poor">Battery health is degrading</string>
+    <string name="alert_connection_lost">Connection to vehicle lost</string>
+    <string name="alert_connection_restored">Connection to vehicle restored</string>
+
+    <!-- Status Messages -->
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_connecting">Connecting...</string>
+    <string name="status_error">Connection Error</string>
+
+    <!-- Error Messages -->
+    <string name="error_network">Network connection error</string>
+    <string name="error_server">Server connection error</string>
+    <string name="error_data_parsing">Data parsing error</string>
+    <string name="error_unknown">Unknown error occurred</string>
+    <string name="error_timeout">Connection timeout</string>
+
+    <!-- Loading Messages -->
+    <string name="loading_data">Loading data...</string>
+    <string name="refreshing_data">Refreshing...</string>
+    <string name="syncing_data">Syncing with vehicle...</string>
+
+    <!-- Settings (for future use) -->
+    <string name="settings">Settings</string>
+    <string name="vehicle_ip_address">Vehicle IP Address</string>
+    <string name="refresh_interval">Refresh Interval</string>
+    <string name="notifications_enabled">Enable Notifications</string>
+    <string name="battery_alert_threshold">Battery Alert Threshold</string>
+    <string name="temperature_alert_threshold">Temperature Alert Threshold</string>
+
+    <!-- Menu Items -->
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_retry">Retry</string>
+
+    <!-- Accessibility -->
+    <string name="content_description_battery_icon">Battery status icon</string>
+    <string name="content_description_motor_icon">Motor status icon</string>
+    <string name="content_description_temperature_icon">Temperature status icon</string>
+    <string name="content_description_refresh_button">Refresh data button</string>
+    <string name="content_description_trip_icon">Trip history icon</string>
+
+    <!-- Time Formats -->
+    <string name="time_format_date">MMM dd, yyyy</string>
+    <string name="time_format_time">HH:mm</string>
+    <string name="time_format_datetime">MMM dd, yyyy HH:mm</string>
+    <string name="time_ago_seconds">%d seconds ago</string>
+    <string name="time_ago_minutes">%d minutes ago</string>
+    <string name="time_ago_hours">%d hours ago</string>
+    <string name="time_ago_days">%d days ago</string>
+
+    <!-- Units -->
+    <string name="unit_percentage">%%</string>
+    <string name="unit_celsius">°C</string>
+    <string name="unit_kilometers">km</string>
+    <string name="unit_meters">m</string>
+    <string name="unit_kmh">km/h</string>
+    <string name="unit_volts">V</string>
+    <string name="unit_hours">h</string>
+    <string name="unit_minutes">m</string>
+    <string name="unit_seconds">s</string>
+</resources>

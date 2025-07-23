@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔧 Simulation Control Panel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Status Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simulation Status"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/simulation_status_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simulation Mode: ACTIVE\nReal-time data simulation running"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Toggle Switch -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Enable Simulation Mode"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary" />
+
+                <Switch
+                    android:id="@+id/simulation_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Scenario Control -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Force Simulation Scenarios"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test different scenarios to see how the app responds to various car conditions:"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Normal Scenario -->
+                <Button
+                    android:id="@+id/btn_normal_scenario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🟢 Normal Operation"
+                    android:backgroundTint="@color/status_good"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Low Battery -->
+                <Button
+                    android:id="@+id/btn_low_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔋 Low Battery Scenario"
+                    android:backgroundTint="@color/battery_low"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Overheating -->
+                <Button
+                    android:id="@+id/btn_overheating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌡️ Overheating Scenario"
+                    android:backgroundTint="@color/temp_hot"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Motor Error -->
+                <Button
+                    android:id="@+id/btn_motor_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️ Motor Error Scenario"
+                    android:backgroundTint="@color/status_error"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Long Trip -->
+                <Button
+                    android:id="@+id/btn_long_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🚗 Long Trip Scenario"
+                    android:backgroundTint="@color/primary_color"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Instructions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Tip: Each scenario will run for 30-60 seconds before automatically changing to keep the simulation dynamic. You can force specific scenarios using the buttons above."
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:background="@color/trip_card_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+</ScrollView>
