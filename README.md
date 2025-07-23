@@ -224,11 +224,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ### Debug Mode
 
 Enable debug logging in the configuration for detailed system information and troubleshooting.
-
-## 📞 Support
-
-For issues, questions, or contributions, please open an issue in the repository or contact the development team.
-
----
-
-**Note**: This is an educational/experimental autonomous vehicle project. Always ensure proper safety measures and follow local regulations when testing autonomous vehicle systems.
